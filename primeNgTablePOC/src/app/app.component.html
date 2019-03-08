@@ -1,0 +1,67 @@
+<div class="container" style="padding: 2%">
+
+
+
+  <p-table #dt1 [columns]="selectedColumns" [value]="dataArray"
+    [reorderableColumns]="true"
+    [scrollable]="true" scrollHeight="500px"
+    [resizableColumns]="true"  
+    (onSort)=onSort($event) (sortFunction)="customSort($event)" [customSort]="true"
+    (onColResize)=onColResize($event)
+    (onRowReorder)=onRowReorder($event)
+    class="table table-hover"
+    stateStorage="local" stateKey="tableState">
+
+    <!-- drop down list -->
+    <ng-template pTemplate="caption">
+        <div style="text-align:left">
+          <p-multiSelect [options]="cols" [(ngModel)]="selectedColumns" optionLabel="header"
+            selectedItemsLabel="{0} columns selected" [style]="{minWidth: '200px'}" defaultLabel="Choose Columns">
+          </p-multiSelect>
+        </div>
+    </ng-template>
+    <br><br>
+
+    <!-- grouping tag to solve conflict in resize -->
+    <ng-template pTemplate="colgroup" let-columns >
+        <colgroup>
+            <col *ngFor="let col of columns" >
+        </colgroup>
+    </ng-template>
+
+    <!-- header list -->
+    <ng-template pTemplate="header" let-columns>
+      <tr class="table-primary">
+
+        <th *ngFor="let col of columns; let i = index;" pReorderableColumn pResizableColumn [pSortableColumn]="col.field" >
+          {{col.header}}
+          <p-sortIcon [field]="col.field" ariaLabel="Activate to sort"
+            ariaLabelDesc="Activate to sort in descending order" ariaLabelAsc="Activate to sort in ascending order">
+          </p-sortIcon>
+        </th>
+
+      </tr>
+    </ng-template>
+
+    <!--  -->
+    <!-- data list -->
+    <ng-template pTemplate="body" let-rowData let-columns="columns" let-index="rowIndex">
+      <tr [pReorderableRow]="index">
+        <td *ngFor="let col of columns">
+          <span *ngIf="col.field != 'Img'">
+              {{rowData[col.field]}}
+          </span>
+          <span *ngIf="col.field == 'Img'">
+              <img src="/assets/imgData/{{rowData[col.field]}}" style="width: 50px">
+            <!-- <img [src]="{{rowData[col.field]}}"> -->
+          </span>
+          
+        </td>
+      </tr>
+    </ng-template>
+
+    
+
+
+  </p-table>
+</div>

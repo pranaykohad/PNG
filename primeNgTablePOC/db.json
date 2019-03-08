@@ -1,0 +1,31 @@
+{
+  "dataArray" : [
+            {"Id":1, "Firstname": "John",       "Lastname": "Doe",        "Email": "john@gmail.com",      "Phone": 9457612828, "City": "pune",      "Img": "1.jpg",   "perVal": 100},
+            {"Id":2, "Firstname": "Mary",       "Lastname": "Moe",        "Email": "mary@gmail.com",      "Phone": 3751246834, "City": "mumbai",    "Img": "2.png",   "perVal": 2},
+            {"Id":3, "Firstname": "Pranay",     "Lastname": "kohad",      "Email": "pranay@gmail.com",    "Phone": 9764512835, "City": "new delhi", "Img": "3.png",   "perVal": 3},
+            {"Id":4, "Firstname": "Pawan",      "Lastname": "kohad",      "Email": "pawan@gmail.com",     "Phone": 3451672828, "City": "bhopal",    "Img": "4.png",   "perVal": 4},
+            {"Id":5, "Firstname": "Luv",        "Lastname": "kohad",      "Email": "luv@gmail.com",       "Phone": 3421657683, "City": "nagpur",    "Img": "5.jpg",   "perVal": 5},
+            {"Id":6, "Firstname": "Kush",       "Lastname": "kohad",      "Email": "kush@gmail.com",      "Phone": 3421576828, "City": "detroit",   "Img": "6.png",   "perVal": 6},
+            {"Id":7, "Firstname": "Rahul",      "Lastname": "Deshmukh",   "Email": "arahul@gmail.com",     "Phone": 9754612738, "City": "chennai",  "Img": "7.png",   "perVal": 700},
+            {"Id":8, "Firstname": "Akash",      "Lastname": "Mankar",     "Email": "akash@gmail.com",     "Phone": 9945462727, "City": "kolkata",   "Img": "8.png",   "perVal": 8},
+            {"Id":9, "Firstname": "Samir",      "Lastname": "Deshmukh",   "Email": "samir@gmail.com",     "Phone": 3421457682, "City": "mumbai",    "Img": "9.jpg",   "perVal": 9},
+            {"Id":10, "Firstname": "Sagar",     "Lastname": "Lahoti",     "Email": "sagar@gmail.com",     "Phone": 6975422372, "City": "kolkata",   "Img": "10.png",  "perVal": 10},
+            {"Id":11, "Firstname": "Raja",      "Lastname": "Singh",      "Email": "raja@gmail.com",      "Phone": 3425767242, "City": "mumbai",    "Img": "11.png",  "perVal": 11},
+            {"Id":12, "Firstname": "Amol",      "Lastname": "Deshmukh",   "Email": "amol@gmail.com",      "Phone": 9751642838, "City": "akola",     "Img": "12.png",  "perVal": 12},
+            {"Id":13, "Firstname": "Amit",      "Lastname": "Kumar",      "Email": "amit@gmail.com",      "Phone": 9487516424, "City": "pune",      "Img": "13.jpg",  "perVal": 13},
+            {"Id":14, "Firstname": "Anuja",     "Lastname": "Kulkarni",   "Email": "anuja@gmail.com",     "Phone": 6754243838, "City": "latur",     "Img": "14.png",  "perVal": 14},
+            {"Id":15, "Firstname": "Anup",      "Lastname": "Chauhan",    "Email": "anup@gmail.com",      "Phone": 6754213423, "City": "Kanpur",    "Img": "15.jpeg", "perVal": 15},
+            {"Id":16, "Firstname": "Basit",     "Lastname": "Khan",       "Email": "basit@gmail.com",     "Phone": 6574232433, "City": "amravati",  "Img": "16.png",  "perVal": 16},
+            {"Id":17, "Firstname": "Chaitali",  "Lastname": "Patil",      "Email": "chaitali@gmail.com",  "Phone": 9874565134, "City": "Latur",     "Img": "17.png",  "perVal": 17}
+
+  ],
+  "cols" : [
+    { "field": "Id",        "header": "Id" },
+    { "field": "Firstname", "header": "FirstName" },
+    { "field": "Lastname",  "header": "Lastname" },
+    { "field": "Email",     "header": "Email" },
+    { "field": "Phone",     "header": "Phone" },
+    { "field": "City",      "header": "City" },
+    { "field": "Img",       "header": "Img" }
+  ]
+}
